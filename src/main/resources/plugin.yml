@@ -1,8 +1,12 @@
 name: ActualShop
-main: com.md5.actualshop.ActualShop
 version: 1.0
-author: md_5
 description: A simple commandless shop plugin that uses an actual item for currency.
+author: md_5
+website: https://github.com/md-5/ActualShop
+
+main: com.md5.actualshop.ActualShop
+depend: [Deadbolt]
+
 permissions:
 #------------------------------------------------------------------------------#
     actualshop.*:
