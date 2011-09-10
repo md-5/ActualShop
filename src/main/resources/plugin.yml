@@ -1,0 +1,28 @@
+name: ActualShop
+main: com.md5.actualshop.ActualShop
+version: 1.0
+author: md_5
+description: A simple commandless shop plugin that uses an actual item for currency.
+permissions:
+#------------------------------------------------------------------------------#
+    actualshop.*:
+        description: All user and admin functionality - every possible node
+        default: op
+        children:
+            actualshop.user.*: true
+            actualshop.admin.*: true
+#------------------------------------------------------------------------------#
+    actualshop.user.*:
+          description: All user functionality
+          default: true
+          children:
+              actualshop.user.use: true
+              actualshop.user.create: true        
+#------------------------------------------------------------------------------#
+    actualshop.admin.*:
+      description: All admin functionality
+      default: op
+      children:
+          actualshop.admin.destroy: true
+          actualshop.admin.server: true
+#------------------------------------------------------------------------------#
