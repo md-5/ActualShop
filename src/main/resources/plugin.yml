@@ -17,16 +17,32 @@ permissions:
             actualshop.admin.*: true
 #------------------------------------------------------------------------------#
     actualshop.user.*:
-          description: All user functionality
-          default: true
-          children:
-              actualshop.user.use: true
-              actualshop.user.create: true        
+        description: All user functionality
+        default: true
+        children:
+            actualshop.user.use: true
+            actualshop.user.create: true   
+    actualshop.user.use:
+        description: Allows a user to buy from shops
+        default: true
+    actualshop.user.create:
+        description: Allows a user to create shops
+        default: true
 #------------------------------------------------------------------------------#
     actualshop.admin.*:
-      description: All admin functionality
-      default: op
-      children:
-          actualshop.admin.destroy: true
-          actualshop.admin.server: true
+        description: All admin functionality
+        default: op
+        children:
+            actualshop.admin.create: true
+            actualshop.admin.destroy: true
+            actualshop.admin.server: true
+    actualshop.admin.create:
+        description: Allows admins to create shops for other users
+        default: op
+    actualshop.admin.destroy: 
+        description: Allows admins to destroy other users shops
+        default: op
+    actualshop.admin.server:
+      description: Allows admins to create and destory server shops
+      default: op      
 #------------------------------------------------------------------------------#
