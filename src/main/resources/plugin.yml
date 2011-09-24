@@ -5,7 +5,6 @@ author: md_5
 website: https://github.com/md-5/ActualShop
 
 main: com.md_5.actualshop.ActualShop
-depend: [Deadbolt]
 
 permissions:
 #------------------------------------------------------------------------------#
